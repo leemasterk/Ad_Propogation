@@ -4,10 +4,10 @@
 ### Topic Description
 In our project, we decide to **Predict** the target customers for Ad propagation by buliding an recommendation system which would employ Item-based **collaboratIve filtering**. The data we use is provided by Tianchi Big Data Competition, which covers 1.1 million users 8 days clicking behaviors under Ad propagation, and Ad & User basic information. How to recommend a specific Ad to potential target customers groups for better customers’ response is a question remained to be solved. Therefore, we propose this project to identify the potential target customers groups for advertisement, which is the actual requirement from business.
 
-###Methodology
+### Methodology
 Since the size of the entire dataset after decompression is near 23GB, we decide to utilize Spark with Yarn and Hadoop. On the consideration of algorithm of recommenddation system, we proposed to use Item-based **collaboratIve filtering**. Specifically, we plan to calculate user-item utility matrix first and using **Clustering algorithm** to find the similar Ad. The recommended Ad will be mapped to users who have similar preference on commodities.
 
-###Demo Plan 
+### Demo Plan 
 The demo will be a web app recommendation system. User can input an ad info:
 
 ```

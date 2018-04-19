@@ -30,5 +30,5 @@ Output
 
 [Mining of Massive Datasets ](http://i.stanford.edu/~ullman/mmds/book0n.pdf)by Jure Leskovec, Anand Rajaraman, and Jeff Ullman
 
-Datasets could be found [here](https://tianchi.aliyun.com/datalab/dataSet.htm?spm=5176.100073.888.26.24d733d89cH58d&id=19).
+Datasets could be found [here](https://tianchi.aliyun.com/datalab/dataSet.html?spm=5176.100073.0.0.dd3e35eemrshx2&dataId=56).
 

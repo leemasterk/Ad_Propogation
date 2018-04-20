@@ -7,13 +7,13 @@ import numpy as np
 
 
 
-# data = pd.read_csv("/Users/lmk/OneDrive - The University of Hong Kong/cloud_computing/Project/ad_test1.csv")
-# data = pd.read_csv("/Users/lmk/OneDrive - The University of Hong Kong/cloud_computing/Project/ad_feature_process.csv")
+
+
 data = pd.read_csv()
 # d = data.iloc[:,:4]
 # data = data.fillna(random.randint(461497,800000))
 data = data.dropna(axis=0)
-# data.to_csv("/Users/lmk/OneDrive - The University of Hong Kong/cloud_computing/Project/ad_feature_process.csv")
+
 # print (data)
 # sdfs
 # d = data

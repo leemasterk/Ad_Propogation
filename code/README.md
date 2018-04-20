@@ -16,6 +16,7 @@ Decompress the ad_feature_process.csv.zip
 Put kmeans_own_v2.py or kmeans_own_v1.py with example1.py or example2.py in the same folder.
 Run the example1.py or example2.py.
 They employ Euclidean and Mahalanobis distance repectively.
+If you run the full data_set, please modify line 21 d = data.iloc[:5,[0,2,3,4]] to d = data.iloc[:,[0,2,3,4]]
 
 
 

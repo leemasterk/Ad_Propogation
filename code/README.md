@@ -1,4 +1,25 @@
-# Instructions on How to Run the Demo
+# Instructions on How to Run the Code
+## Warning: The process would take a long period of time.
+In terminal, type /opt/spark-2.2.1-bin-hadoop2.7/bin/spark-submit --master yarn --deploy-mode cluster ~/code/exfinal1.py to run the code.
+The output result stored in hadoop file system /data/clu_result and /data/op_cen
+
+Create folder named "Server" and put Recommend.py and RecommendServer.py in this folder
+
+
+To run the server
+Deploy the java web WAR file on tomcate: entering timcat index.page and enter the APP manager to upload project   
+start the tomcate server : TOMCATE_HOME/bin/startup.sh
+Interminal, type python ~/Server/RecommendServer.py to start server
+
+Local version:
+Decompress the ad_feature_process.csv.zip
+Put kmeans_own_v2.py or kmeans_own_v1.py with example1.py or example2.py in the same folder.
+Run the example1.py or example2.py.
+They employ Euclidean and Mahalanobis distance repectively.
+
+
+
+# Instructions on How to set up a cluster
 ## Tutorial of Installation
 
 ### Installation Steps
@@ -647,11 +668,4 @@ Hive installation is completed successfully. Now you require an external databas
 
 ---
 
-# Instructions on How to Run the Code
-## Warning: The process would take a long period of time.
-In terminal, type /opt/spark-2.2.1-bin-hadoop2.7/bin/spark-submit --master yarn --deploy-mode cluster ~/code/exfinal1.py to run the code.
 
-Local version:
-Decompress the ad_feature_process.csv.zip
-Put kmeans_own_v2.py or kmeans_own_v1.py with example1.py or example2.py in the same folder.
-Run the example1.py or example2.py

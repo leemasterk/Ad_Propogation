@@ -646,3 +646,9 @@ Edit the hive-env.sh file by appending the following line:
 Hive installation is completed successfully. Now you require an external database server to configure Metastore. We use Apache Derby database.
 
 ---
+
+# Instructions on How to Run the Code
+## Warning: The process would take a long period of time.
+In terminal, type /opt/spark-2.2.1-bin-hadoop2.7/bin/spark-submit --master yarn --deploy-mode cluster ~/code/exfinal1.py to run the code.
+
+Local version:Put kmeans_own_v2.py or kmeans_own_v1.py with example1.py or example2.py in the same folder. Run the example1.py or example2.py

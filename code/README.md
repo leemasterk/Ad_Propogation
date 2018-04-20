@@ -651,4 +651,7 @@ Hive installation is completed successfully. Now you require an external databas
 ## Warning: The process would take a long period of time.
 In terminal, type /opt/spark-2.2.1-bin-hadoop2.7/bin/spark-submit --master yarn --deploy-mode cluster ~/code/exfinal1.py to run the code.
 
-Local version:Put kmeans_own_v2.py or kmeans_own_v1.py with example1.py or example2.py in the same folder. Run the example1.py or example2.py
+Local version:
+Decompress the ad_feature_process.csv.zip
+Put kmeans_own_v2.py or kmeans_own_v1.py with example1.py or example2.py in the same folder.
+Run the example1.py or example2.py

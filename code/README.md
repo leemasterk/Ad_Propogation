@@ -13,6 +13,8 @@ Interminal, type python ~/Server/RecommendServer.py to start server
 
 Local version:
 Decompress the ad_feature_process.csv.zip
+Please input the data path in line 11 data = pd.read_csv() after decompression.
+example uses ad_feature, example1 use ad_feature_process.
 Put kmeans_own_v2.py or kmeans_own_v1.py with example1.py or example2.py in the same folder.
 Run the example1.py or example2.py.
 They employ Euclidean and Mahalanobis distance repectively.

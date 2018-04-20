@@ -23,10 +23,15 @@ class KMeansPlusPlus:
 
         self.data_frame = data_frame  # m x n
         self.numRows = data_frame.shape[0]  # m
-        self.m = np.array([[ 7.40287431e-07, -1.15234740e-07, -3.16733397e-07, -1.23115312e-08],
-                 [-1.15234740e-07,  1.92350266e-06, -8.96508054e-08,  5.49038595e-09],
-                 [-3.16733397e-07, -8.96508054e-08,  6.13053227e-06, -7.91933304e-08],
-                 [-1.23115312e-08,  5.49038595e-09, -7.91933304e-08, 2.04514885e-06]])
+        # self.m = np.array([[ 7.40287431e-07, -1.15234740e-07, -3.16733397e-07, -1.23115312e-08],
+        #          [-1.15234740e-07,  1.92350266e-06, -8.96508054e-08,  5.49038595e-09],
+        #          [-3.16733397e-07, -8.96508054e-08,  6.13053227e-06, -7.91933304e-08],
+        #          [-1.23115312e-08,  5.49038595e-09, -7.91933304e-08, 2.04514885e-06]])
+
+        self.m = np.array([[1.39120240528e-06, -7.11964361751e-08, 1.68554275438e-07],
+                        [-7.1196436173e-08, 4.18367212413e-06, -2.45888145316e-07],
+                        [1.6855427544e-07, -2.45888145311e-07, 1.43614586304e-06]])
+
         # self.m = self.get_metric()
         # k x n, the i,j entry being the jth coordinate of center i
         self.centers = None
@@ -204,9 +209,9 @@ class KMeansPlusPlus:
         # dis_mat = DataFrame()
         dis_mat = np.zeros((len(self.data_frame.index),1))
         # print ('test')
-        M= DataFrame(self.m,index=['adgroup_id','campaign_id','customer','brand'],)
+        M= DataFrame(self.m,index=['campaign_id','customer','brand'],)
                      # columns=['adgroup_id','campaign_id','customer','brand'])
-        M_transpose = DataFrame(self.m.T,index=['adgroup_id','campaign_id','customer','brand'],)
+        M_transpose = DataFrame(self.m.T,index=['campaign_id','customer','brand'],)
         # print (M)
         # print(M_transpose)
         for i in range(self.k):
@@ -229,7 +234,7 @@ class KMeansPlusPlus:
             # print("M ",M)
             # dist = DataFrame.dot(d, M)
             df1 = DataFrame.dot(d, M).rename(columns=
-              {0:'adgroup_id',1:'campaign_id',2:'customer',3:'brand'})
+              {0:'campaign_id',1:'customer',2:'brand'})
             # dist = DataFrame.dot(df1, d.transpose())
             dist = np.sqrt(np.diagonal(DataFrame.dot(df1, d.transpose())))
             # print ("df1 ",df1.shape)
